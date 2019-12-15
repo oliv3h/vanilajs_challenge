@@ -1,0 +1,16 @@
+.hidden {
+    display: none;
+}
+
+form#username{
+    text-align: center;
+}
+
+.username {
+    text-align: center;
+}
+
+.username h2 {
+    display: inline-block;
+    color: blueviolet;
+}

@@ -1,0 +1,43 @@
+li {
+    list-style: none;
+  }
+
+
+div.todo,
+form#todo {
+    margin: 0 auto;
+    padding: 10px;
+    text-align: center;
+
+  }
+
+  div.todo > input {
+    width: 90%;
+    padding: 3 5px;
+  }
+  
+  ul.js-todoList {
+    text-align: center;
+  }
+  
+  ul.js-todoList li {
+    margin: 5px;
+  }
+  
+  ul.js-todoList li > * {
+    margin: 3px;
+  }
+  
+  ul.js-todoList li button {
+    border: 1px solid #333;
+    padding: 7px 7px 7px 10px;
+  }
+  
+  ul.js-todoList.pending li span {
+    color: red;
+  }
+  
+  ul.js-todoList.finished li span {
+    color: orange;
+  }
+  
