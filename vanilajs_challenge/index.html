@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>MOMENT.</title>
+    <style>
+    .wrap {
+        margin: 0 auto;
+        vertical-align: middle;
+        padding-top:200px;
+    }
+    .weather {
+        text-align: center;
+    }
+    </style>
+    <link href="style/clock.css" rel="stylesheet">
+    <link href="style/username.css" rel="stylesheet">
+    <link href="style/todo.css" rel="stylesheet">
+</head>
+<body>
+    <div class="wrap">
+            <h1 class="time"></h1>
+            <form id="username">
+                <h2>please insert your name :)</h2>
+                <input type="text" placeholder="hi! what your name?">
+            </form>
+            <div class="username hidden">
+                <h2></h2>
+                <button>❌</button>
+            </div>
+            <form id="todo">
+                <h2>why don't you insert your to-do?</h2>
+                <input type="text" placeholder="going to work">
+            </form>
+            <div class="todo">
+                <h2>➡️ PENDING...</h2>
+                <ul class="js-todoList pending"></ul>
+                <h2>➡️ FINISHED!!!</h2>
+                <ul class="js-todoList finished"></ul>
+            </div>
+            <h2></h2>
+            <p class="weather"></p>
+    </div>
+    
+    <script src="./clock.js"></script>
+    <script src="./username.js"></script>
+    <script src="./todo.js"></script>
+    <script src="./bg.js"></script>
+    <script src="./weather.js"></script>
+    <script>
+    function init() {
+        clock();
+        username();
+        todo();
+        bg();
+        weather();
+    }
+    init();
+    </script>
+</body>
+</html>
